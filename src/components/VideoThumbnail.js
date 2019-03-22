@@ -120,8 +120,8 @@ export default class VideoThumbnail extends React.Component {
             const { width, height } = this.props;
             const video = this.refs.videoEl;
             const canvas = this.refs.canvas;
-            canvas.height = video.videoHeight;
-            canvas.width = video.videoWidth;
+            canvas.height = height;
+            canvas.width = width;
 
             // resize thumbnail or no ?
             if (!width || !height) {
