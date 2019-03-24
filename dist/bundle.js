@@ -1037,8 +1037,8 @@ var VideoThumbnail = function (_React$Component) {
 
                 var video = _this.refs.videoEl;
                 var canvas = _this.refs.canvas;
-                canvas.height = video.videoHeight;
-                canvas.width = video.videoWidth;
+                canvas.height = _this$props.height;
+                canvas.width = _this$props.width;
 
                 // resize thumbnail or no ?
                 if (!width || !height) {
